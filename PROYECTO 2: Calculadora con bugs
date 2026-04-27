@@ -1,0 +1,18 @@
+❌ Código roto
+def suma(a, b):
+    return a - b
+
+print(suma(5, 3))
+🐛 Error
+Función incorrecta
+✅ Solución
+def suma(a, b):
+    return a + b
+
+print(suma(5, 3))
+💡 Mejora PRO
+def suma(a, b):
+    try:
+        return float(a) + float(b)
+    except:
+        return "Error: entrada inválida"
