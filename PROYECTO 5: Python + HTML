@@ -1,0 +1,20 @@
+Código HTML + Python mal conectado
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return index.html
+🐛 Error
+No usa render_template
+✅ Solución
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+app.run(debug=True)
