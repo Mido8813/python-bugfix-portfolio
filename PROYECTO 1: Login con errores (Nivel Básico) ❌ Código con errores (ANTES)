@@ -8,7 +8,8 @@ if user = usuario and passw == password:
     print("Bienvenido")
 else
     print("Error")
-🐛 Errores detectados
+
+Errores detectados
 = en vez de ==
 Mala práctica en nombres
 No hay validación
