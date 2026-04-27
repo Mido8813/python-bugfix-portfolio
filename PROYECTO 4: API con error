@@ -1,0 +1,19 @@
+❌ Código
+import requests
+
+response = requests.get("https://api.fake.com/data")
+print(response.json())
+🐛 Problemas
+No valida respuesta
+Puede crashear
+✅ Solución
+import requests
+
+try:
+    response = requests.get("https://api.fake.com/data")
+    if response.status_code == 200:
+        print(response.json())
+    else:
+        print("Error en la API:", response.status_code)
+except requests.exceptions.RequestException:
+    print("Error de conexión")
