@@ -1,0 +1,25 @@
+usuario = "admin"
+password = "1234"
+
+user = input("Usuario: ")
+passw = input("Password: ")
+
+if user = usuario and passw == password:
+    print("Bienvenido")
+else
+    print("Error")
+🐛 Errores detectados
+= en vez de ==
+Mala práctica en nombres
+No hay validación
+✅ Código corregido (DESPUÉS)
+usuario_correcto = "admin"
+password_correcto = "1234"
+
+user = input("Usuario: ").strip()
+password = input("Password: ").strip()
+
+if user == usuario_correcto and password == password_correcto:
+    print("Bienvenido")
+else:
+    print("Credenciales incorrectas")
