@@ -1,0 +1,12 @@
+❌ Código con error
+file = open("datos.txt", "r")
+print(file.read())
+🐛 Problema
+No cierra archivo
+Puede fallar si no existe
+✅ Solución profesional
+try:
+    with open("datos.txt", "r") as file:
+        print(file.read())
+except FileNotFoundError:
+    print("Archivo no encontrado")
